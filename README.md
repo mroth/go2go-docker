@@ -8,12 +8,17 @@ See ["The Go Blog: The Next Step For Generics"][1] for additional context.
 
 ## Installation
 
-Either build locally, or `docker pull mrothy/go2go`.
+Either build locally, or [`docker pull mrothy/go2go`][hub].
+
+[Automated builds][tags] are run nightly at 0400 UTC.
+
+[hub]: https://hub.docker.com/repository/docker/mrothy/go2go
+[tags]: https://hub.docker.com/repository/docker/mrothy/go2go/tags
 
 ## Usage
 
-Use just like the official `golang` images, except you also have access to `go
-tool go2go`.
+Use just like the official `golang` images, except you now also have access to
+`go tool go2go`.
 
 
     $ go tool go2go
