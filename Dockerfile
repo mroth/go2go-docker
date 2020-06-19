@@ -23,7 +23,7 @@ RUN set -eux; \
 
 WORKDIR ${GOROOT}
 RUN cd src && ./make.bash
-RUN rm -rf ${GOROOT}/pkg/bootstrap ${GOROOT}/pkg/obj
+RUN rm -rf ${GOROOT}/pkg/bootstrap ${GOROOT}/pkg/obj ${GOROOT}/.git
 
 FROM alpine:3.12
 ARG GOPATH=/go
