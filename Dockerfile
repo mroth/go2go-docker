@@ -26,8 +26,8 @@ RUN cd src && ./make.bash
 RUN rm -rf ${GOROOT}/pkg/bootstrap ${GOROOT}/pkg/obj ${GOROOT}/.git
 
 FROM alpine:3.12
-ARG GOPATH=/go
 ARG GOROOT
+ENV GOPATH=/go
 
 # set up nsswitch.conf for Go's "netgo" implementation
 # - https://github.com/golang/go/blob/go1.9.1/src/net/conf.go#L194-L275
