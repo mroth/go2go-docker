@@ -6,6 +6,10 @@ See ["The Go Blog: The Next Step For Generics"][1] for additional context.
 
 [1]: https://blog.golang.org/generics-next-step
 
+## Installation
+
+Either build locally, or `docker pull mrothy/go2go`.
+
 ## Usage
 
 Use just like the official `golang` images, except you also have access to `go
